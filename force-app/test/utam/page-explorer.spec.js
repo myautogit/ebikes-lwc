@@ -31,7 +31,7 @@ describe('perform some', () => {
                 ).getAppNavBar()
             ).getNavItem('CPQ Quotes')
         ).clickAndWaitForUrl(
-            '/lightning/o/SBQQ__Quote__c/list?filterName=Recent'
+            '/lightning/o/Quote__c/list?filterName=Recent'
         );
 
         await (
@@ -47,7 +47,7 @@ describe('perform some', () => {
 
         await (
             await utam.load(ChangeRecordType)
-        ).selectRecordType('Blue Planet Sales Draft');
+        ).selectRecordType('Test Record type');
         await browser.debug();
     });
 });
